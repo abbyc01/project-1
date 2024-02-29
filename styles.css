@@ -1,0 +1,117 @@
+:root {
+    --dark: #3f2212;
+    --light-gray: #ced1d3;
+    --red-color: #CE000C;
+    background-color: var(--light-gray);
+    font-family: "Lekton", serif;
+    color: var(--dark);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-family: "Lekton", serif;
+}
+
+
+.navigation-bar {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+    background-color: var(--light-gray);
+    border-bottom: 1px solid var(--dark);
+    padding-bottom: 20px;
+
+}
+
+nav .name {
+    font-size: 30px;
+    font-family: "Shrikhand", serif;
+    color: var(--dark);
+    float: left;
+    padding-left: 20px;
+    cursor: pointer;
+
+}
+
+nav ul {
+    float: right;
+    padding-right: 40px;
+    font-family: "Shrikhand", serif;
+    color: var(--dark);
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 30px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+nav li a:hover {
+    color: var(--red-color);
+}
+
+.body-content {
+    margin-top: 115px;
+}
+
+.textbox-container {
+    position: absolute;
+    box-sizing: border-box;
+    width: 35%;
+    height: 60%;
+    left: 5%;
+    top: 30%;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.pic-container {
+    position: absolute;
+    box-sizing: border-box;
+    width: 35%;
+    height: 70%;
+    right: 5%;
+    top: 30%;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+/*I asked ChaptGPT to help me format this, I was having trouble getting the picture to fit in the container*/
+.home-pic img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.home-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.chinese-name {
+    color: var(--red-color);
+    font-weight: bolder;
+    float: right;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
