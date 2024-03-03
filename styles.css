@@ -8,15 +8,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
-
 }
 
 body {
     font-family: "Lekton", serif;
 }
 
-
+/* Home page*/
 .navigation-bar {
     width: 100%;
     height: 75px;
@@ -28,7 +26,6 @@ body {
     background-color: var(--light-gray);
     border-bottom: 1px solid var(--dark);
     padding-bottom: 20px;
-
 }
 
 nav .name {
@@ -38,12 +35,12 @@ nav .name {
     float: left;
     padding-left: 20px;
     cursor: pointer;
-
 }
 
 nav ul {
     float: right;
     padding-right: 40px;
+    bottom: 25%;
     font-family: "Shrikhand", serif;
     color: var(--dark);
     list-style: none;
@@ -76,42 +73,155 @@ nav li a:hover {
     height: 60%;
     left: 5%;
     top: 30%;
-    border: black;
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid black;
+
 
 }
 
+/*I asked ChaptGPT to help me format this, I was having trouble getting the picture to fit in the container 3/1/2024*/
 .pic-container {
     position: absolute;
     box-sizing: border-box;
-    width: 35%;
+    width: 45%;
     height: 70%;
     right: 5%;
-    top: 30%;
-    border: black;
-    border-width: 1px;
-    border-style: solid;
-}
+    top: 25%;
+    border: 1px solid black;
+    background-color: var(--light-gray);
 
-/*I asked ChaptGPT to help me format this, I was having trouble getting the picture to fit in the container*/
-.home-pic img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
 }
 
 .home-pic {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+}
+
+.home-pic img {
+    max-height: 90%;
+    max-width: 100%;
     object-fit: contain;
+
+}
+
+/* I asked ChatGPT how to make the container opaque 3/2/2024*/
+.name-container {
+    position: absolute;
+    width: 90px;
+    height: 240px;
+    top: 20%;
+    right: 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 .chinese-name {
     color: var(--red-color);
     font-weight: bolder;
-    float: right;
+    font-size: 45px;
+    letter-spacing: 18px;
     writing-mode: vertical-lr;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-orientation: upright;
+}
+
+
+.social-links ul {
+    list-style: none;
+    margin-top: 0;
+}
+
+.social-links button {
+    background-color: var(--light-gray);
+    border-radius: 43%;
+    border: 2px solid var(--red-color);
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    cursor: pointer;
+    color: var(--dark);
+
+}
+
+.social-links button:hover {
+    color: var(--red-color);
+}
+
+.home-text {
+    padding: 15px;
+    text-align: center;
+
+}
+
+/*About me page*/
+.about-intro h2 {
+    font-family: "Shrikhand", serif;
+    font-weight: lighter;
+    color: var(--red-color);
+}
+
+
+.about-container {
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    top: 20%;
+    left: 35%;
+    border: 1px solid black;
+    padding: 15px;
+
+}
+
+/* I also asked chat GPT to help me format this carousel and align everything correctly 3/2/2024*/ 
+.about-picture-container {
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    top: 20%;
+    left: 1%;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.custom-carousel {
+    margin: auto;
+    max-width: 90%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    max-height: 90%;
+    margin: auto;
+}
+
+
+/* Resume page*/
+.resume-container {
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    border: 1px solid black;
+    top: 20%;
+    left: 4%;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.resume-container i {
+    color: var(--red-color);
+}
+
+.resume-content {
+    max-height: 100%;
+    overflow-y: auto;
 }
