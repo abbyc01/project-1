@@ -162,11 +162,17 @@ nav li a:hover {
 
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 9%;
+}
+
 /*About me page*/
 .about-intro h2 {
     font-family: "Shrikhand", serif;
     font-weight: lighter;
-    color: var(--red-color);
+    color: var(--dark);
 }
 
 
@@ -181,7 +187,11 @@ nav li a:hover {
 
 }
 
-/* I also asked chat GPT to help me format this carousel and align everything correctly 3/2/2024*/ 
+.about-section i {
+    color: var(--red-color);
+}
+
+/* I also asked chat GPT to help me format this carousel and align everything correctly 3/2/2024*/
 .about-picture-container {
     position: absolute;
     width: 30%;
@@ -224,4 +234,8 @@ nav li a:hover {
 .resume-content {
     max-height: 100%;
     overflow-y: auto;
+}
+
+.resume-content h4 {
+    text-decoration: underline;
 }
